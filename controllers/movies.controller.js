@@ -5,14 +5,12 @@
 
 
 export const MovieIndex = (req, res)=>{
-    res.send("Get all")
+    res.send("Get all movie lists")
 };
-
 
 export const MovieCreate = (req, res)=>{
     res.send("Create a Movie")
 }
-
 
 export const MovieUpdate = (req,res)=>{
     res.send("Update a movie")
