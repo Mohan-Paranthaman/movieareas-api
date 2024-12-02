@@ -10,6 +10,10 @@ const PORT = 6969;
 connectDB();
 
 
+//Data understanding middleware
+app.use(express.json())
+app.use(express.urlencoded({extended : true}))
+
 app.get('/',(req, res)=>{
     res.json({ msg : "Hello students!"})
 });

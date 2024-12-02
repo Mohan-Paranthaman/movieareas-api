@@ -1,15 +1,17 @@
 
 
-
-
-
-
 export const MovieIndex = (req, res)=>{
     res.send("Get all movie lists")
 };
 
 export const MovieCreate = (req, res)=>{
-    res.send("Create a Movie")
+    //id,title,describtion
+
+    console.log(req.body)
+
+    return res.json(req.body)
+
+
 }
 
 export const MovieUpdate = (req,res)=>{
